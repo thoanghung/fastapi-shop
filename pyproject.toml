@@ -3,9 +3,13 @@ name = "fastapi-shop"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "asyncpg>=0.32.0",
     "fastapi[standard]>=0.128.8",
+    "pgvector>=0.5.1",
     "pwdlib[argon2]>=0.2.1",
+    "pydantic-settings>=2.16.3",
     "pyjwt>=2.15.1",
+    "sqlalchemy[asyncio]>=2.1.8",
 ]
 [tool.fastapi]
 entrypoint = "app.main:app"
