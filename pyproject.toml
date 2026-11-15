@@ -1,0 +1,11 @@
+[project]
+name = "fastapi-shop"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi[standard]>=0.128.8",
+    "pwdlib>=0.2.1",
+    "pyjwt>=2.15.1",
+]
+[tool.fastapi]
+entrypoint = "app.main:app"
